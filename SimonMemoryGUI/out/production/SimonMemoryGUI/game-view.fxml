@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.geometry.Insets?>
+<?import java.net.URL?>
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.GameView"
+      alignment="CENTER" spacing="25">
+    <stylesheets>
+        <URL value="@style.css"/>
+    </stylesheets>
+    <padding>
+        <Insets top="30" right="40" bottom="30" left="40"/>
+    </padding>
+
+    <Label fx:id="resultLabel" text="משחק סיימון!!!"
+           styleClass="result-label"/>
+
+    <HBox spacing="15" alignment="CENTER">
+        <Button fx:id="redBtn" text="🔴" styleClass="color-btn"/>
+        <Button fx:id="greenBtn" text="🟢" styleClass="color-btn"/>
+        <Button fx:id="blueBtn" text="🔵" styleClass="color-btn"/>
+        <Button fx:id="yellowBtn" text="🟡" styleClass="color-btn"/>
+    </HBox>
+
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="startBtn" text="התחל משחק חדש" styleClass="action-btn"/>
+        <Button fx:id="historyBtn" text="הצג היסטוריית משחקים" styleClass="action-btn"/>
+    </HBox>
+</VBox>
+

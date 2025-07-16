@@ -1,0 +1,100 @@
+.color-btn {
+    -fx-background-radius: 100;
+    -fx-border-radius: 100;
+    -fx-min-width: 100px;
+    -fx-min-height: 100px;
+    -fx-max-width: 100px;
+    -fx-max-height: 100px;
+    -fx-border-color: white;
+    -fx-border-width: 4px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.25), 8, 0.5, 0, 2);
+    -fx-cursor: hand;
+    -fx-font-size: 0px;
+}
+
+
+#redBtn    { -fx-background-color: #e74c3c; }
+#greenBtn  { -fx-background-color: #2ecc71; }
+#blueBtn   { -fx-background-color: #3498db; }
+#yellowBtn { -fx-background-color: #f1c40f; }
+
+.color-btn:hover {
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+    -fx-opacity: 0.85;
+}
+
+
+.showing {
+    -fx-opacity: 0.5;
+    -fx-cursor: default;
+}
+.choosing {
+    -fx-opacity: 1.0;
+}
+
+
+.action-btn {
+    -fx-font-size: 16px;
+    -fx-background-color: linear-gradient(to bottom, #fdfdfd, #dadada);
+    -fx-background-radius: 10px;
+    -fx-border-color: #aaa;
+    -fx-border-width: 1px;
+    -fx-padding: 8 14;
+    -fx-cursor: hand;
+    -fx-font-weight: bold;
+}
+
+.action-btn:hover {
+    -fx-background-color: #d1d1d1;
+}
+
+.result-label {
+    -fx-font-size: 24px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 15 0 10 0;
+}
+
+
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #cccccc;
+    -fx-table-cell-border-color: #e0e0e0;
+    -fx-font-size: 14px;
+    -fx-selection-bar: #d0eaff;
+    -fx-selection-bar-non-focused: #eaf6ff;
+}
+.table-column {
+    -fx-alignment: CENTER;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+.table-row-cell:filled {
+    -fx-background-color: #fcfcfc;
+}
+.table-row-cell:odd {
+    -fx-background-color: #f3f3f3;
+}
+.table-row-cell:selected {
+    -fx-background-color: #d6eaf8;
+    -fx-text-fill: #000000;
+}
+
+
+.root {
+    -fx-background-image: url("background.png");
+    -fx-background-size: cover;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+
+.showing {
+    -fx-opacity: 0.4;
+    -fx-cursor: default;
+}
+
+.highlight {
+    -fx-opacity: 1.0 !important;
+}
+
